@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+}
+nav ul{
+    background-color:darkolivegreen;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover{
+    background-color: #006400;
+}
+img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+}
+.contenido{
+    display: flex;
+    margin: 60px;
+}
+.introduccion{
+    width: 60%;
+    
+}
+.secciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-right: 40px;
+}
+.secciones img{
+    margin-left: 40px;
+}
+.secciones h2{
+    margin-bottom: 40px;
+    text-align: center;
+    color: darkgreen;
+}
+.secciones p{
+    margin-bottom: 20px;
+}
+.secciones a:hover{
+    background-color: #006400;
+    color: #ffffff;
+}
+.noticias{
+    width: 40%;
+    margin-top: 60px;
+    text-align: center;
+}
+.noticias a{
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.noticias h2{
+    text-align: center;
+    color: darkgreen;
+}
+.noticias img{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.noticia{
+    border: 3px solid darkolivegreen;
+    margin-top: 20px;
+}
+.noticia p{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px
+}
+.noticia a:hover{
+    background-color: #006400;
+    color: #ffffff;
+}
+.noticia a{
+    margin-right: 40px;
+}
