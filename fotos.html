@@ -31,20 +31,22 @@
             </div>
             <div class="secciones">
                 <div>
-                    <h2>FORMULARIO</h2>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" autocapitalize="Email"/>
-                    <br>
-                    <br>
-                    <label for="titulo">Título de la fotografía:</label>
-                    <input type="text" name="titulo" id="titulo" autocomplete="Title"/>
-                    <br>
-                    <br>
-                    <label for="imagen">Seleccionar imagen:</label>
-                    <input type="file" name="imagen" id="imagen" autocomplete="photo"/>
-                    <br>
-                    <br>
-                    <button type="submit" name="enviar">Enviar</button>
+                    <form id="myForm">
+                        <h2>FORMULARIO</h2>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" autocapitalize="Email" required/>
+                        <br>
+                        <br>
+                        <label for="titulo">Título de la fotografía:</label>
+                        <input type="text" name="titulo" id="titulo" autocomplete="Title" required/>
+                        <br>
+                        <br>
+                        <label for="imagen">Seleccionar imagen:</label>
+                        <input type="file" name="imagen" id="imagen" autocomplete="photo" required/>
+                        <br>
+                        <br>
+                        <button type="submit" id="submitButton" name="enviar">Enviar</button>
+                    </form>
                 </div>
             </div>
             <div class="secciones">
@@ -89,5 +91,21 @@
             </div>
         </div>
     </div>
+    <script>
+        // Obtén una referencia al formulario y al botón de envío
+        var form = document.getElementById('myForm');
+        var submitButton = document.getElementById('submitButton');
+    
+        // Agrega un evento de clic al botón de envío
+        submitButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+    
+            // Muestra el mensaje de confirmación
+            alert('Formulario enviado con éxito');
+    
+            // Restablece los campos del formulario
+            form.reset();
+        });
+    </script>
 </body>
 </html>
